@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>菲林问答</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container my-5 border shadow rounded">
+      <div class="mx-4 my-4">
+        {% if ctx.answered %}
+        <div class="alert alert-primary" role="alert">你回答对了 {{ ctx.correct }} 题，可以拿到 {{ ctx.flags|length }} 个 Flag。</div>
+        {% if ctx.extra %}
+        <div class="alert alert-success" role="alert">你答对了额外题目，拿到了额外的 Flag！</div>
+        {% endif %}
+        <div class="alert alert-info" role="alert">在前五题里答对三题，你可以拿到第一个 Flag；答对前五题，你可以拿到第二个 Flag；如果你答对了额外题目，还可以拿到额外的 Flag。</div>
+        <ul>
+          {% for flag in ctx.flags%}
+          <li>{{ flag }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+        <h1>菲林问答</h1>
+        <p>在中国科学技术大学举办的 Hackergame 里，在一众高难的技术向题目中，有一个喜闻乐见的“填空题”——猫咪问答。要拿到这个分数，你需要充分使用你手头上“搜索引擎”的力量。</p>
+        <p>玩过今年 Hackergame 的某位申必出题人头昏脑胀之下，决定好好抄袭这个题目，出一份《菲林问答》！</p>
+        <div>
+          <form action="/" method="post">
+            <div class="mb-3">
+              <label class="form-label" for="question1">1. 既然都叫做菲林问答了，你知道代表“菲林”代表猫科动物的称呼是出自哪一款游戏吗？</label>
+              <input class="form-control" type="text" name="question1">
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="question2">2. “敖水泱泱，古榕苍苍”，连江一中又在哪里呢？</label>
+              <input class="form-control" type="text" name="question2">
+              <div class="form-text">格式：x省x市x县x镇x路x号，除了x号以外全部使用汉字（一/二/三/...）</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="question3">3. 你们的前社长就读于西安电子科技大学，并加入了“西电信息安全协会”。你知道这个协会的英文名缩写是什么吗？</label>
+              <input class="form-control" type="text" name="question3">
+              <div class="form-text">格式：全部大写</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="question4">4. 10 月新番《孤独摇滚》中，作为主角的后藤独是一个吉他技能顶尖的超级社恐。你想知道她的第一把吉他是什么型号的，可是面对着瑟瑟发抖的可爱波奇酱，你真的下的了狠心把吉他抢过来看吗qwq？不妨上网搜一下吧。</label>
+              <input class="form-control" type="text" name="question4">
+              <div class="form-text">格式：首字母大写，题目答案可在萌娘百科寻找（都给我去看《孤独摇滚》！QAQ）</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="question5">5. HTTP 协议中有一个概念叫做“状态码”，大家耳熟能详的 404 就是一个 HTTP 状态码（意思是未找到 Not Found）。不过你知道用来表示服务器不能拿来泡咖啡的状态码是什么吗？（笑）</label>
+              <input class="form-control" type="text" name="question5">
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="question6">EX. IETF（Internet Engineering Task Force，互联网工程任务组）有时会一反严肃的常态，出版一些有意思的 RFC（Request For Comments，用来标准化地发布互联网规范并得到外界反馈）。上文的“泡咖啡”就是某年的愚人节笑话。这回，它介绍了一个全新的 16 进制表示方式：Bioctal。你能把使用 Bioctal 表示的 10zjvf70042 这个数字转换成 10 进制吗？</label>
+              <input class="form-control" type="text" name="question6">
+            </div>
+            <input class="btn btn-primary" type="submit" value="提交！">
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

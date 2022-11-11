@@ -1,0 +1,3 @@
+- Flag 1（解答 3 题）：ZFun{WoW_3_Pro6lEms_5olveD!}
+- Flag 2（解答 5 题）：ZFun{Meow_Ca7S_ArE_CUT3!!!}
+- Flag EX（解答 EX）：ZFun{Nya_N0t_7hAt_Ha2D!!!}

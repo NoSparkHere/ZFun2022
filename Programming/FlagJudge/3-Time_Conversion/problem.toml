@@ -1,0 +1,30 @@
+id = 3
+title = "时间格式转换"
+description = '''
+写一个程序，将秒数转换为“时:分:秒”的形式。
+
+（题目与测试数据来自厦门大学 COJ，感谢出题者的付出！）
+'''
+instruction = '''
+### 输入
+
+一个正整数（不超过int的范围），表示秒。
+
+### 输出
+
+转换后的“时:分:秒”。
+'''
+accepted_languages = ["c", "cpp", "python"]
+flag = "ZFun{C0NVER51ON!_{hash}}"
+
+[limit]
+time = 1 # in s
+memory = 256 # in mb
+
+[[samples]]
+stdin = '''
+25300
+'''
+stdout = '''
+7:1:40
+'''

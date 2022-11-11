@@ -1,0 +1,55 @@
+id = 2
+title = "A+B Problem"
+description = '''
+简单的小学算术嘛，这我也会——
+'''
+instruction = '''
+### 输入
+
+一行两个正整数 a 和 b 。
+
+对于 $ 100\% $ 的数据，$ 1 \leq a, b \leq 10 ^ 6 $。
+
+### 输出
+
+一行一个正整数 a + b 。
+
+### 新手提示
+
+本题开始，你们将会接触到“标准输入输出”的概念。
+
+在线评测是一个判断代码是否正确的系统。在这里，你的代码的用户是机器，机器向你的代码填入数据，你的代码返回结果。
+
+一般来说，在这类在线评测题目中，你**并不需要用提示语要求用户输入数据**。也就是说，在使用 `input()` 一类的函数的时候，你不需要写对用户的提示（也就是函数括号以内的内容）。
+
+如果你觉得本题目有困难，这里将给出 Python 语言下的的两种解法。如果你选择了 C/C++ 来解题，我想你可能并不需要标准解法，直接提交吧。
+
+```python
+# 一个比较通用的单行多数字输入的读取方法。num_list 是一个包含了一行内所有输入数字的列表（严谨来说并不算列表，而是一个 map 对象）。
+num_list = map(lambda x:int(x), input().split())
+num = sum(num_list) # sum 函数直接将列表加和
+print(num)
+```
+
+```python
+# 也可以一步步拆分输入。注意， `str.split()` 方法返回的是一个字符串列表（`list[str]`）。
+input_list=input().split()
+a=input_list[0]
+b=input_list[1]
+print(int(a)+int(b)) # 在这里把字符串转化为整数类型
+```
+'''
+accepted_languages = ["c", "cpp", "python"]
+flag = "ZFun{A_Plus_B_Equals_to_WhA7?}"
+
+[limit]
+time = 1 # in s
+memory = 256 # in mb
+
+[[samples]]
+stdin = '''
+1 2
+'''
+stdout = '''
+3
+'''

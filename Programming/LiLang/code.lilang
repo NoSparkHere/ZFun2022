@@ -1,0 +1,40 @@
+let data as list list()
+let n as number 0
+while n is less than 10:
+    let tmp as string default(string)
+    input tmp
+    append tmp into data
+    let n n+1
+
+let longest as string default(string)
+let longest_length as number 0
+foreach item in data:
+    let length as number len(item)
+    if length is greater than longest_length:
+        let longest item
+        let longest_length length
+
+let data as list list()
+let n as number 0
+while n is less than 10:
+    let tmp as string default(string)
+    input tmp
+    append tmp into data
+    let n n+1
+
+let shortest as string default(string)
+let shortest_length as number 2147483647
+foreach item in data:
+    let length as number len(item)
+    if length is less than shortest_length:
+        let shortest item
+        let shortest_length length
+
+let out as string default(string)
+let i as number 0
+while i is less than longest_length:
+    if i mod 2 is 0:
+        append shortest[(i/2) mod shortest_length] into out
+    append longest[i] into out
+    let i i+1
+print out

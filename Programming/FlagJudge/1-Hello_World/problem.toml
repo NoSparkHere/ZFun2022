@@ -1,0 +1,27 @@
+id = 1
+title = "Hello World"
+description = '''
+向世界宣告你的存在。
+'''
+instruction = '''
+### 输入
+
+无输入
+
+### 输出
+
+输出 `Hello, World!`。
+'''
+accepted_languages = ["c", "cpp", "python"]
+flag = "ZFun{You_Are_The_W0RLD}"
+
+[limit]
+time = 1 # in s
+memory = 256 # in mb
+
+[[samples]]
+stdin = '''
+'''
+stdout = '''
+Hello, World!
+'''

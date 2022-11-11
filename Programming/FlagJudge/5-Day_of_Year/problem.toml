@@ -1,0 +1,34 @@
+id = 5
+title = "算日期"
+description = '''
+今天是XXXX年XX月XX日，你给我算算今天是今年的第多少天吧！
+
+（题目与测试数据来自厦门大学 COJ，感谢出题者的付出！）
+'''
+instruction = '''
+### 输入
+
+输入一个日期，格式为yyyy/mm/dd
+
+### 输出
+
+输出一个整数，表示该日期在当年中为第几天
+
+### 新手提示
+
+如何用 `/` 而不是空格分割数据？
+'''
+accepted_languages = ["c", "cpp", "python"]
+flag = "ZFun{365_or_366_{hash}}"
+
+[limit]
+time = 1 # in s
+memory = 256 # in mb
+
+[[samples]]
+stdin = '''
+2000/03/01
+'''
+stdout = '''
+61
+'''
