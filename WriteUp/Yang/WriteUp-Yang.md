@@ -10,13 +10,13 @@
 
 Flag: `ZFun{Lets_GO!}`
 
-### 0-2 PlantsVSZombies?:
+### 0-2 PlantsVSZombies?:+
 
 如提示：`打游戏就能获得flag，我怎么会做这样的梦`
 
 打游戏打过第一关就好了
 
-![](/assets/pvz.png)
+![](assets/pvz.png)
 
 Flag: `ZFun{Guess_how_I_made_it?}`
 
@@ -27,7 +27,7 @@ Flag: `ZFun{Guess_how_I_made_it?}`
 
 打开题目文档之后先进行一个Ctrl-A
 
-![](/assets/word-1-1.png)
+![](assets/word-1-1.png)
 
 将鼠标移动到中间部分发现有白色图形，移开后对所有文字修改颜色
 
@@ -51,9 +51,9 @@ Flag: `ZFun{L00k_6eyOnd_the_ve1l}`
 
 自 己 改
 
-![修改前](/assets/excel-1-3.png)
+![修改前](assets/excel-1-3.png)
 
-![修改后](/assets/excel-1-4.png)
+![修改后](assets/excel-1-4.png)
 
 最后得到Flag: `ZFun{5um_thEm_t0GetHer_13782}`
 
@@ -71,7 +71,7 @@ Flag: `ZFun{URLs_Are_3ssen7ial}`
 
 得到Flag
 
-![](/assets/giveup.png)
+![](assets/giveup.png)
 
 Flag: `ZFun{N3ver_9oma_1et_U_d0wn}`
 
