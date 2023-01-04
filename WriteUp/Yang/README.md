@@ -542,7 +542,7 @@ static class Programs
         Xor(answer, GenerateIntList(answer.Length));
         Console.WriteLine(Encoding.UTF8.GetString(IntArrayToByteArray(answer)));
         
-        # Flag: ZFun{reverse_a_program_written_by_csharp_is_very_easy}
+        // Flag: ZFun{reverse_a_program_written_by_csharp_is_very_easy}
     }
 }
 ```
